@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import { supabase } from '@/lib/supabase'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
+import Nav from '@/components/Nav'  // ← add this line
 
 const GUIDES = [
   { id: 1, cat: 'beginner', title: 'Your First Hour in BRM5', author: 'Rdyoda', date: 'May 2026', read: '8 min', desc: 'Everything you need to know before you spend a single credit. Loadout basics, gamemode breakdown, and the first gun you should buy.', pro: false },
