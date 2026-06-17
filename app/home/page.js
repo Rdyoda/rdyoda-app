@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import { supabase } from '@/lib/supabase'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
-import Nav from '@/components/Nav'
+import Nav from '../../components/Nav'
 
 export default function HomePage() {
   const [user, setUser] = useState(null)
