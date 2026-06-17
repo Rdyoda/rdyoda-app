@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import { supabase } from '@/lib/supabase'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
+import Nav from '@/components/Nav'
 
 export default function HomePage() {
   const [user, setUser] = useState(null)
@@ -31,25 +32,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-[#07090D] text-white">
       {/* Nav */}
-      <nav className="sticky top-0 z-50 bg-[#07090D]/90 backdrop-blur border-b border-white/5 px-8 py-4 flex items-center justify-between">
-        <Link href="/home" className="font-black text-2xl tracking-widest">
-          RDYODA<span className="text-[#1BBFA0]">.</span>GG
-        </Link>
-        <div className="flex items-center gap-6">
-          <Link href="/home" className="text-sm text-gray-400 hover:text-white transition">Home</Link>
-          <Link href="/guns" className="text-sm text-gray-400 hover:text-white transition">Guns</Link>
-          <Link href="/guides" className="text-sm text-gray-400 hover:text-white transition">Guides</Link>
-          <Link href="/credits" className="text-sm text-gray-400 hover:text-white transition">Credits</Link>
-          <Link href="/attachments" className="text-sm text-gray-400 hover:text-white transition">Attachments</Link>
-        </div>
-        <div className="flex items-center gap-3">
-          <span className="text-xs text-gray-500">{user?.email}</span>
-          <button onClick={handleSignOut}
-            className="text-xs text-gray-500 hover:text-white transition px-3 py-1 border border-white/10 rounded-lg">
-            Sign out
-          </button>
-        </div>
-      </nav>
+      <Nav />
 
       {/* Hero */}
       <div className="px-8 py-20 max-w-5xl mx-auto">

@@ -115,17 +115,7 @@ export default function LoadoutPage() {
 
   return (
     <div className="min-h-screen bg-[#07090D] text-white">
-      <nav className="sticky top-0 z-50 bg-[#07090D]/90 backdrop-blur border-b border-white/5 px-8 py-4 flex items-center justify-between">
-        <Link href="/home" className="font-black text-2xl tracking-widest">RDYODA<span className="text-[#1BBFA0]">.</span>GG</Link>
-        <div className="flex items-center gap-6">
-          <Link href="/home" className="text-sm text-gray-400 hover:text-white transition">Home</Link>
-          <Link href="/guns" className="text-sm text-gray-400 hover:text-white transition">Guns</Link>
-          <Link href="/guides" className="text-sm text-gray-400 hover:text-white transition">Guides</Link>
-          <Link href="/credits" className="text-sm text-gray-400 hover:text-white transition">Credits</Link>
-          <Link href="/attachments" className="text-sm text-gray-400 hover:text-white transition">Attachments</Link>
-        </div>
-        <a href="https://youtube.com/@Rdyoda9" target="_blank" className="text-xs text-yellow-400 border border-yellow-400/20 px-3 py-1.5 rounded-lg hover:bg-yellow-400/10 transition">▶ @Rdyoda9</a>
-      </nav>
+      <Nav />
 
       <div className="max-w-2xl mx-auto px-6 py-16">
         <h1 className="font-black text-4xl mb-2">BUILD YOUR LOADOUT</h1>
